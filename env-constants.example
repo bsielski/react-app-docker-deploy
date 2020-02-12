@@ -1,0 +1,11 @@
+REPO_LINK=git@bitbucket.org:user/some-app.git
+
+BUILD_COMPOSE_PROJECT_NAME=exampleapp-build
+DOCKERFILE=Dockerfile-npm
+CURRENT_USER=$(id -u):$(id -g)
+
+REACT_APP_API_HOST=http://api.example.com
+
+WEBSERVER_COMPOSE_PROJECT_NAME=exampleapp-front-web
+
+VIRTUAL_HOST=example.com

@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+
+  build:
+    build:
+      context: ../app
+      dockerfile: ../build-docker/${DOCKERFILE}
+    volumes:
+      - ../build:/home/app/build
+    user: ${CURRENT_USER}
+    env_file:
+      - .env.app

@@ -1,0 +1,28 @@
+### app source
+/app
+
+### react build
+/build
+
+### secrets
+
+/env-constants
+
+/.env.repo-link
+/build-docker/.env
+/build-docker/.env.app
+/webserver-docker/.env
+/webserver-docker/.env.webserver
+
+
+### Emacs garbage
+*~
+.*~
+\#*\#
+.\#*
+
+### KDE garbage
+.directory
+
+### misc garbage
+.DS_Store

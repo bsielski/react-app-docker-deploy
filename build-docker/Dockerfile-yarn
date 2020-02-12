@@ -1,0 +1,11 @@
+FROM node:13.7.0-alpine
+RUN addgroup -S app && adduser -S app -G app
+WORKDIR /home/app
+COPY package.json .
+COPY yarn.lock .
+RUN ["yarn"]
+COPY public/ ./public/
+COPY src/ ./src/
+RUN chmod -R 777 /home/app
+USER app
+CMD ["yarn", "build"]
